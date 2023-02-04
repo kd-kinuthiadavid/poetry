@@ -6,7 +6,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    colors: {
+      "pr-black": "#281E02",
+      "pr-orange": "#E5968E",
+      "pr-white": "#FFFFFF",
+    },
+    extend: {
+      lineHeight: {
+        md: "44px",
+      },
+    },
   },
   plugins: [],
 };

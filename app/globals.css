@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .heading {
+        @apply text-7xl md:text-9xl font-black
+    }
+
+    .text-leading {
+        line-height: 2rem !important;
+    }
+}
+
+@media (min-width: 768px){
+    .text-leading {
+        line-height: 3rem !important;
+    }
+}
