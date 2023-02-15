@@ -15,6 +15,10 @@ module.exports = {
       lineHeight: {
         md: "44px",
       },
+      backgroundImage: {
+        "pr-banner-gradient":
+          "linear-gradient(89.92deg, #281E02 3.23%, #E5968E 298.85%)",
+      },
     },
   },
   plugins: [],
