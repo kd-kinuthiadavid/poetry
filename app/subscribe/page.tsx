@@ -28,7 +28,7 @@ const Subscribe = () => {
           </p>
         </div>
       ) : (
-        <div className="flex flex-col md:flex-row gap-y-3 md:gap-y-0 gap-x-5 w-full">
+        <div className="flex flex-col md:flex-row gap-y-3 md:gap-y-0 gap-x-5 w-full lg:max-w-4xl">
           <input
             className="py-4 px-2 w-full bg-pr-black border-2 rounded-md placeholder:text-pr-white focus:ring-pr-orange focus:border-pr-orange outline-none focus:placeholder:text-pr-orange"
             type="text"
