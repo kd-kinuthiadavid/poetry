@@ -1,14 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
+import { sendEmail } from "../utils";
 
 const Subscribe = () => {
   const [email, setEmail] = useState("");
   const [isSubd, setIsSubd] = useState(false);
 
-  function handleSubscribe() {
-    // @TODO: add subscribe logic
+  async function handleSubscribe() {
     setIsSubd(true);
+
+    await sendEmail(email);
   }
   return (
     <main className="flex flex-col gap-y-5 md:gap-y-10 lg:gap-y-16 justify-center h-screen lg:mx-16">
@@ -33,6 +35,7 @@ const Subscribe = () => {
             className="py-4 px-2 w-full bg-pr-black border-2 rounded-md placeholder:text-pr-white focus:ring-pr-orange focus:border-pr-orange outline-none focus:placeholder:text-pr-orange"
             type="text"
             placeholder="enter your email"
+            onChange={(e) => setEmail(e.target.value)}
           />
           <button
             className="bg-pr-orange py-4 md:py-0 px-5 rounded-md text-pr-white text-lg font-bold hover:bg-pr-black hover:border-2 hover:border-pr-orange hover:text-pr-orange"
